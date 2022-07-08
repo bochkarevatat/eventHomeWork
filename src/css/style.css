@@ -15,6 +15,7 @@
   width: 125px;
   height: 125px;
   border: 2px solid white;
+  border-radius: 10% 30% 50% 70%;
 }
 
 .image {
@@ -24,7 +25,7 @@
 }
 
 .cursor {
-  cursor: url('../img/molotok.png'), pointer;
+  cursor: url('../img/molot.png'), pointer;
 }
 
 .points {

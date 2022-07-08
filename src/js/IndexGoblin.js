@@ -14,7 +14,6 @@ export default class IndexGoblin {
     points.classList.add('points', 'points');
     this.gameField.insertAdjacentElement('beforeBegin', points);
     points.insertAdjacentElement('afterend', goblin);
-    // this.gameField.classList.add('cursor');
     document.querySelector('.points').textContent = `Ваши баллы: ${this.point}`;
     document.querySelector('.goblin').textContent = `Ваши промахи: ${this.goblins}`;
   }

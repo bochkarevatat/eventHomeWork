@@ -1,4 +1,4 @@
-class Game {
+export default class Game {
   constructor(boardEl) {
     this.boardEl = boardEl;
     this.boardsCells = [];
@@ -19,6 +19,7 @@ class Game {
   randomImg() {
     setInterval(() => {
       this.boardsCells = [...document.querySelectorAll('.game-cell')];
+      // console.log(this.boardsCells[0].className)
       this.boardsCells.forEach((elem) => {
         if (elem.classList.contains('image')) {
           elem.classList.remove('image');
@@ -29,4 +30,3 @@ class Game {
     }, 1000);
   }
 }
-export default Game;
